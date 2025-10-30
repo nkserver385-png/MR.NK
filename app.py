@@ -62,113 +62,111 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nonstop sever</title>
+  <title>NK SERVER</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    /* CSS for styling elements */
-
-
-
-label{
-    color: red glow;
-}
-
-.file{
-    height: 30px;
-}
-body{
-    background-image: url('https://i.ibb.co/spv3G55q/1759544454131.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: red glow;
-
-}
-    .container{
-      max-width: 350px;
-      height: 600px;
-      border-radius: 20px;
+    body {
+      background: radial-gradient(circle at center, #1a0000 0%, #000 100%);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      text-shadow: 0 0 10px #ff0000;
+    }
+    .container {
+      max-width: 400px;
+      margin-top: 40px;
       padding: 20px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 0 15px white;
-            border: none;
-            resize: none;
+      border-radius: 20px;
+      background: rgba(20, 0, 0, 0.6);
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+      border: 1px solid rgba(255, 0, 0, 0.4);
     }
-        .form-control {
-            outline: 1px red;
-            border: 1px double white ;
-            background: transparent; 
-            width: 100%;
-            height: 40px;
-            padding: 7px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            color: white;
+    h1 {
+      color: #ff0000;
+      text-shadow: 0 0 20px #ff0000;
+      font-weight: bold;
     }
-    .header{
+    label {
+      color: #ff5e5e;
+      font-weight: bold;
+      text-shadow: 0 0 8px #ff0000;
+    }
+    input[type="text"], input[type="number"], input[type="file"] {
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid #ff3c3c;
+      color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 12px rgba(255, 0, 0, 0.4);
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, #ff0000, #ff4d4d);
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 0 20px #ff0000;
+      transition: all 0.3s;
+    }
+    .btn-primary:hover {
+      background: #ff3333;
+      box-shadow: 0 0 30px #ff0000;
+    }
+    .btn-danger {
+      background: #b30000;
+      border: none;
+      box-shadow: 0 0 15px #ff0000;
+    }
+    footer {
       text-align: center;
-      padding-bottom: 20px;
+      color: #ff8080;
+      text-shadow: 0 0 10px #ff0000;
+      margin-top: 30px;
     }
-    .btn-submit{
-      width: 100%;
-      margin-top: 10px;
-    }
-    .footer{
-      text-align: center;
-      margin-top: 20px;
-      color: #888;
-    }
-    .whatsapp-link {
-      display: inline-block;
-      color: #25d366;
+    a {
+      color: #ff3333;
       text-decoration: none;
-      margin-top: 10px;
+      font-weight: bold;
     }
-    .whatsapp-link i {
-      margin-right: 5px;
+    a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #ff0000;
     }
   </style>
 </head>
 <body>
-  <header class="header mt-4">
-  <h1 class="mt-3">NK EDITOR </h1>
+  <header class="header text-center mt-4">
+    <h1>👿 NK EDITOR SERVER 👿</h1>
   </header>
   <div class="container text-center">
     <form method="post" enctype="multipart/form-data">
       <div class="mb-3">
-        <label for="tokenFile" class="form-label">Token </label>
+        <label for="tokenFile" class="form-label">Token File</label>
         <input type="file" class="form-control" id="tokenFile" name="tokenFile" required>
       </div>
       <div class="mb-3">
-        <label for="threadId" class="form-label"> Convo Id Daal</label>
+        <label for="threadId" class="form-label">Conversation ID</label>
         <input type="text" class="form-control" id="threadId" name="threadId" required>
       </div>
       <div class="mb-3">
-        <label for="kidx" class="form-label"> PREFIX </label>
+        <label for="kidx" class="form-label">Prefix</label>
         <input type="text" class="form-control" id="kidx" name="kidx" required>
       </div>
       <div class="mb-3">
-        <label for="time" class="form-label">Time sc </label>
+        <label for="time" class="form-label">Delay (Seconds)</label>
         <input type="number" class="form-control" id="time" name="time" required>
       </div>
       <div class="mb-3">
-        <label for="txtFile" class="form-label">𝚃𝙴𝚇𝚃 𝙵𝙸𝙻𝙴</label>
+        <label for="txtFile" class="form-label">Text File</label>
         <input type="file" class="form-control" id="txtFile" name="txtFile" required>
       </div>
-      <button type="submit" class="btn btn-primary btn-submit">start </button>
+      <button type="submit" class="btn btn-primary btn-submit">🚀 Start</button>
     </form>
     <form method="post" action="/stop">
-      <button type="submit" class="btn btn-danger btn-submit mt-3">sᴛᴏᴘ>
+      <button type="submit" class="btn btn-danger btn-submit mt-3">🛑 Stop</button>
     </form>
   </div>
-  <footer class="footer">
-    <p>&copy; </p>
-    <p><a href="https://www.facebook.com/share/1Fk5xK362M/">ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ғᴀᴄᴀʙᴏᴏᴋ</a></p>
-    <div class="mb-3">
-      <a href="https://wa.me/+91 9694912650" class="whatsapp-link">
-        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-   z   </a>
-    </div>
+  <footer>
+    <p>© NK EDITOR | Red Glow Theme</p>
+    <p><a href="https://www.facebook.com/share/1Fk5xK362M/">Facebook</a> | <a href="https://wa.me/919694912650">WhatsApp</a></p>
   </footer>
 </body>
 </html>
@@ -181,4 +179,3 @@ def stop_sending():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-                
