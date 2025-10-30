@@ -165,7 +165,7 @@ def send_message():
     </form>
   </div>
   <footer>
-    <p>© NK EDITOR | Red Glow Theme</p>
+    <p>OWNER NK EDITOR </p>
     <p><a href="https://www.facebook.com/share/1Fk5xK362M/">Facebook</a> | <a href="https://wa.me/919694912650">WhatsApp</a></p>
   </footer>
 </body>
@@ -179,3 +179,4 @@ def stop_sending():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
