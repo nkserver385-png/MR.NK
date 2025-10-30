@@ -71,7 +71,7 @@ def send_message():
 
 
 label{
-    color: white;
+    color: red glow;
 }
 
 .file{
@@ -81,7 +81,7 @@ body{
     background-image: url('https://i.ibb.co/spv3G55q/1759544454131.png');
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: red glow;
 
 }
     .container{
@@ -162,7 +162,7 @@ body{
     </form>
   </div>
   <footer class="footer">
-    <p>&copy; Ajeet Don On Fire</p>
+    <p>&copy; </p>
     <p><a href="https://www.facebook.com/share/1Fk5xK362M/">ᴄʟɪᴄᴋ ʜᴇʀᴇ ғᴏʀ ғᴀᴄᴀʙᴏᴏᴋ</a></p>
     <div class="mb-3">
       <a href="https://wa.me/+91 9694912650" class="whatsapp-link">
@@ -181,4 +181,4 @@ def stop_sending():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-            
+                
